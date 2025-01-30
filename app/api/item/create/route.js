@@ -8,7 +8,7 @@ export async function POST(request){
         await connectDB()
         await ItemModel.create(reqBody)
         return NextResponse.json({message:"アイテム作成"})
-    }catch(error){
+    }catch(err){
         return NextResponse.json({message:"アイテム作成に失敗しました"})
     }
 }
