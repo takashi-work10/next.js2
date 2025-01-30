@@ -1,6 +1,6 @@
 import mongoose from "mongoose" 
 
-const connectDB = () => {
+const connectDB = async() => {
     try{ 
         await mongoose. connect("mongodb+srv://takashiyamada0606:AsnTzY2ugdFw9EFN@cluster0.lrmou.mongodb.net/nextMarket15Data?retryWrites=true&w=majority&appName=Cluster0") 
         console. log("Success: Connected to MongoDB") 
